@@ -1,0 +1,171 @@
+/* Font Families */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+    --bg-color: rgb(9, 11, 26);
+    --card-bg: rgb(27, 25, 56);
+    --accent-color: rgb(170, 92, 219);
+    --white: rgb(255, 255, 255);
+    --tp-white-1: rgba(255, 255, 255, 0.749);
+    --tp-white-2: rgba(255, 255, 255, 0.6);
+    --font-1: 'Inter', sans-serif;
+    --font-2: 'Lexend Deca', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main{
+    margin: 10vh;
+    min-width: 80vw;
+    min-height: 60vh;
+    background-color: var(--card-bg);
+    display: flex;
+    border-radius: 5px;
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+.text{
+    margin-bottom: 2rem;
+}
+
+.main-heading{
+    color: var(--white);
+    font-family: var(--font-1);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hv{
+    color: var(--accent-color);
+}
+
+.text p{
+    color: var(--tp-white-1);
+    font-family: var(--font-1);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.stats{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.stat{
+    margin-right: 3rem;
+}
+
+.st{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+    font-family: var(--font-1);
+    color: var(--white);
+}
+
+.sp{
+    color: var(--tp-white-2);
+    font-family: var(--font-2);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.right{
+    width: 50%;
+    background: var(--accent-color) url(../images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.attribution{
+    color: #fff;
+    font-family: var(--font-2);
+    font-size: 15px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.attribution a {
+    color: #3E52A3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.attribution a:hover{
+    color: #5262a5;
+}
+
+@media only screen and (max-width: 880px) {
+    main{
+        flex-direction: column-reverse;
+        min-width: 80vw;
+        min-height: 80vh;
+        overflow: scroll;
+    }
+    .right{
+        background: var(--accent-color) url(../images/image-header-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: soft-light;
+        border-radius: 5px 5px 0px 0px;
+        min-height: 200px;
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+    .text p{
+        font-size: 0.8rem;
+    }
+    .main-heading{
+        font-size: 1.5rem;
+    }
+    .text{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .stat{
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .stats{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1.5rem;
+        justify-content: center;
+    }
+
+    .attribution{
+        display: none;
+    }
+}
