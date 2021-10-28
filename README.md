@@ -38,5 +38,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Harshit Patil](https://www.harshitpatilx.github.io)
+- Website - [Harshit Patil](https://harshitpatilx.github.io)
 - Frontend Mentor - [@harshitpatilx](https://www.frontendmentor.io/profile/harshitpatilx)
